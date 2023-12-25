@@ -1,8 +1,8 @@
 {
-  "name": "firebot-custom-script-starter",
-  "scriptOutputName": "starterScript",
+  "name": "firebot-voicemeeter-control-script",
+  "scriptOutputName": "VMControl",
   "version": "1.0.0",
-  "description": "A starter Firebot custom script",
+  "description": "A script to control voicemeeter",
   "main": "",
   "scripts": {
     "build": "webpack",
@@ -10,17 +10,22 @@
     "copy": "node ./scripts/copy-build.js",
     "test": "jest"
   },
-  "author": "ebiggz",
+  "author": "cky",
   "license": "GNU3",
   "devDependencies": {
-    "@crowbartools/firebot-custom-scripts-types": "^5.53.2",
-    "@types/node": "^14.14.6",
+    "@crowbartools/firebot-custom-scripts-types": "^5.53.2-6",
+    "@types/node": "^14.18.63",
     "jest": "^26.6.3",
     "terser-webpack-plugin": "^4.2.3",
+    "ts-easy-voicemeeter-remote": "^2.0.1",
     "ts-jest": "^26.4.4",
-    "ts-loader": "^8.0.7",
+    "ts-loader": "^8.4.0",
     "typescript": "^4.0.5",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^4.1.0"
+    "webpack": "^5.89.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "volta": {
+    "node": "18.17.1",
+    "npm": "10.2.4"
   }
 }

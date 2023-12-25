@@ -26,8 +26,14 @@ module.exports = {
       },
     ],
   },
+  externals: {
+    "ffi-napi": "commonjs2 ffi-napi",
+    "debug": "debug",
+    "ref-napi": "ref-napi",
+    "ref-array-napi": "ref-array-napi",
+  }, 
   optimization: {
-    minimize: true,
+    minimize: false,
 
     minimizer: [
       new TerserPlugin({
